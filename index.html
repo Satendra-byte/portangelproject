@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anjeli</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anjeli</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="saten profile picture" class="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anjeli Ramadhani Safitri</h1>
+        <p class="section__text__p2">Business Manager</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            title="linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anjeli-ramadhani-safitri/'"
+          />
+          <img
+            src="./assets/whatsapp.png"
+            alt="My Github profile"
+            title="whatsapp"
+            class="icon"
+            onclick="location.href='https://wa.me/+62895637580917'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Working Experiences</h3>
+                        <p>Business Development
+                            <br/>Customer Support
+                            <br/> Sales Administrator
+                            <br/>Report Officer
+                            <br/>Credit Administrator</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+                        <p>Bachelor of History Education
+                            <br/>GPA: 3.68/4.00</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Dynamic History Education Graduate with Diverse Internship Experience in Business Development, Customer Support, and Sales.
+
+              Resourceful History Education graduate with a high GPA, bringing hands-on experience from various internships across business 
+              development, customer support, and sales. Proven ability to analyze client needs, manage relationships, and drive engagement 
+              through effective communication and organizational skills. Adept at using industry tools and committed to leveraging a broad 
+              skill set for continued growth and impact in dynamic professional environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">WORKING EXPERIENCES</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PT Shippindo Teknologi Logistik (Shipper) – Jakarta, Indonesia</h3>
+                                    <p><code>Business Development Intern</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> PT Doa Anak Digital (Bangbeli) </h3>
+                  <p><code>Customer Support Intern</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PT Talenta Sinergi Group (eduwork.id)</h3>
+                                    <p><code>Sales Administrator Intern</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cera Production</h3>
+                                    <p><code>Report Officer Intern</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PT Tbk. Adira Dinamika Multi Finance</h3>
+                  <p><code>Credit Administrator Intern</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PT Ramayana Lestari Sentosa, Tbk</h3>
+                  <p><code>Part Time Sales Promotion Girl</code></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">ORGANIZATIONAL EXPERIENCES</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Futureglow.Up</h3>
+                                    <p><code>Administration Staff</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Association of History Education Students</h3>
+                  <p><code>General Secretary</code></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Academic Organization in Faculty of Teacher Training and Education</h3>
+                                    <p><code>Assistant Manager of Public Relations Division</code></p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+      <h1 class="title">SKILLS & EXPERIENCES</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <ul>PROJECT/VOLUNTER EXPERIENCES<br>
+                <li>Secretary of the National Community Service in Anjir Mambulau Barat</li>
+                <li>Secretary of the History Fair 2021 project</li>
+                <li>Public Relations Coordinator for the National Webinar on Women's Empowerment by the Student Executive Board of UNSR</li>
+                <li>Steering Committee for Public Relations at the Faculty-level ON-MIPA Competition of the Student Family of the Faculty of Teacher Training and Educational Sciences, Sriwijaya University</li>
+                <li>Event Coordinator for the National Student Creativity Program by the Academic Organization of the Faculty of Teacher Training 2020 and Educational Sciences, Sriwijaya University</li>
+            </ul>
+              <!-- <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div> -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              HONORS & AWARDS<br>
+• Delegation from Sriwijaya University for the National Community Service in
+Central Kalimantan. 2022<br>
+• Contributor to the poetry anthology book "Hilang". 2020<br>
+• Contributor to the anthology book "Rezeki: Ikhitiar dan Takdir" by NPH.
+              <!-- <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div> -->
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              SKILLS<br>
+Language: Indonesia (Fluent), English (Conversation).<br>
+Familiar Software: MS. Office, Canva, Google Suite, PDS System, Notion, Slack, Trello, Discord.<br>
+Soft Skill: Critical Thinking, Public Speaking, People Development, Negotiation, Teamwork,
+Customer Engagement, Team Leadership, Problem Solving.
+              <!-- <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>-->
+            </div>
+          </div> 
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anjelisafitri@gmail.com">anjelisafitri@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://www.linkedin.com/in/anjeli-ramadhani-safitri/'>LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Anjeli-Ramadhani-Safitri. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
